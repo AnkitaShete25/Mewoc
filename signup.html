@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body 
+{
+    font-family: Arial, sans-serif;
+    display: flex;
+    color:rgba(27, 36, 48, 1)
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-image: url(Bg.png);
+    position: relative;
+    width: 1412;
+    height: 400;
+    top: 146px;
+    left:20px;
+
+}
+
+/* Container */
+.container 
+{
+    
+    display: flex;
+    width: 1000px;
+     border-radius: 100px;
+    padding: 50px;
+    margin-left: 50px;
+    
+}
+
+/* Left Card Section */
+.card {
+    width: 600%;
+    height: 650px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    margin: left 100px;
+}
+
+/* Form Section */
+.form-container {
+    width: 50%;
+    padding: 10px;
+    
+}
+h2 {
+    font-size: 30px;
+    margin:left 400px;
+    color:white;
+    width: 1000;
+    height: 121;
+    top: 110px;
+    left: 1200px;
+   }
+   
+p {
+    font-size: 14px;
+    margin:left 400px;
+    color:white;
+    width: 527;
+    height: 121;
+    top: 110px;
+}
+a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+/* Input Fields */
+.input-group {
+    /* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px;
+gap: 8px;
+
+position: absolute;
+width: 294px;
+height: 71px;
+left: 909px;
+top: 327px;
+
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(60px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 12px;
+
+}
+.input-group input,
+input[type="text"],
+input[type="email"] 
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #1e293b;
+    color: white;
+}
+
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+     border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* OR text */
+.or-text {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.google-btn:hover {
+    background: #333;
+}
+    .google-btn
+    {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 250px; /* Adjust width as needed */
+    height: 50px;
+    gap: 10px;
+        
+}
+
+.google-btn img {
+    height: 20px; /* Adjust icon size */
+     
+}
+
+.apple-btn:hover {
+    background: #333;
+}
+     .apple-btn 
+     {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         color: white;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 250px; /* Adjust width as needed */
+        height: 50px;
+        gap: 10px;
+
+        
+    }
+    .apple-btn img {
+        height: 20px; /* Adjust icon size */
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card"></div> <!-- Placeholder for an image or content -->
+        <div class="form-container">
+            <h2>Create an account</h2>
+            <p>Already have an account? <a href="#">Sign in</a></p>
+            
+            <div class="input-group">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <input type="text" placeholder="Referral ID">
+            <input type="email" placeholder="Email ID">
+            
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                <br>
+                <br>
+            </div>
+            
+            <button type="submit">Create account</button>
+            <br>
+
+            <p class="or-text">Or register with</p>
+
+            <div class="social-buttons">
+                <button class="apple-btn">
+                    <img src="Page-1.png" alt="Apple Logo"> Apple
+                </button>
+                <button class="google-btn">
+                    <img src="Icons.png" alt="Google Logo"> Google
+                </button>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
