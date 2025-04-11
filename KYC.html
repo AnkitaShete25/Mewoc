@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        background-image: url(Bg.png);
+        color: white;
+        margin: 0;
+    }
+    
+    .sidebar {
+        width: 250px;
+        background: #1e293b;
+        padding: 20px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .user-info {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .user-info img {
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .menu {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .menu li {
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .menu li:hover {
+        background: #334155;
+        border-radius: 5px;
+    }
+    
+    .expandable {
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .expandable::after {
+        content: "▼";
+        position: absolute;
+        right: 10px;
+        font-size: 12px;
+    }
+    
+    .submenu {
+        display: none;
+        list-style: none;
+        padding-left: 15px;
+    }
+    
+    .expandable:hover .submenu {
+        display: block;
+    }
+    
+    .explore-btn {
+        width: 100%;
+        padding: 10px;
+        background: #2563eb;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    .main-content {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .history-container {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    
+    .history-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .buttons button {
+        background: #334155;
+        border: none;
+        padding: 8px 12px;
+        margin-left: 5px;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #1e2a3b;
+        border-radius: 10px;
+    }
+    
+    th, td {
+        padding: 12px;
+        border-bottom: 1px solid #334155;
+        text-align: left;
+    }
+    
+    th {
+        background: #334155;
+    }
+    
+    tr:hover {
+        background: #334155;
+    }
+    
+    .table-footer {
+        margin-top: 10px;
+        text-align: center;
+    }    
+</style>
+<body>
+    <div class="sidebar">
+        <div class="logo">Mewoc Technologies</div>
+        <div class="user-info">
+            <img src="user-avatar.png" alt="User Avatar">
+            <p>Envato Authors</p>
+            <small>Workspace Settings</small>
+        </div>
+        <ul class="menu">
+            <li>Dashboard</li>
+            <li class="expandable">My Profile
+                <ul class="submenu">
+                    <li>KYC</li>
+                    <li>Change Password</li>
+                    <li>Set/Change Pin</li>
+                    <li>Bank Details</li>
+                    <li>Payment Address</li>
+                </ul>
+            </li>
+            <li>Trading</li>
+            <li>Web Trade</li>
+            <li>Funding</li>
+            <li>IB Management</li>
+            <li>My Trades</li>
+            <li>Tickets</li>
+            <li>Trading Platform</li>
+            <li>Mobile Apps</li>
+        </ul>
+        <button class="explore-btn">EXPLORE MORE</button>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>Deposit History Listing</h2>
+            <span>Hello, <b>Sandy Syahbana</b></span>
+        </header>
+
+        <div class="history-container">
+            <div class="history-header">
+                <h3>Deposit History Listing</h3>
+                <div class="buttons">
+                    <button>Column Visibility</button>
+                    <button>PDF</button>
+                    <button>Excel</button>
+                    <button>Copy</button>
+                    <button>🔍 Search</button>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>MT5 Account ID</th>
+                        <th>Amount (USDT)</th>
+                        <th>Converted Amount</th>
+                        <th>Payment Type</th>
+                        <th>Create At</th>
+                        <th>Admin Note</th>
+                        <th>Status</th>
+                        <th>Attachment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>IB567XS</td>
+                        <td>$130</td>
+                        <td>$20</td>
+                        <td>Crypto</td>
+                        <td>12-2-2025</td>
+                        <td>NA</td>
+                        <td>Confirm</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>IB567XS</td>
+                        <td>$130</td>
+                        <td>$20</td>
+                        <td>Crypto</td>
+                        <td>12-2-2025</td>
+                        <td>NA</td>
+                        <td>Confirm</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>IB567XS</td>
+                        <td>$130</td>
+                        <td>$20</td>
+                        <td>Crypto</td>
+                        <td>12-2-2025</td>
+                        <td>NA</td>
+                        <td>Confirm</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>IB567XS</td>
+                        <td>$130</td>
+                        <td>$20</td>
+                        <td>Crypto</td>
+                        <td>12-2-2025</td>
+                        <td>NA</td>
+                        <td>Confirm</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>IB567XS</td>
+                        <td>$130</td>
+                        <td>$20</td>
+                        <td>Crypto</td>
+                        <td>12-2-2025</td>
+                        <td>NA</td>
+                        <td>Confirm</td>
+                        <td>--</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="table-footer">Showing 0 to 0 of 0 entries</div>
+        </div>
+    </div>
+</body>
+</html>
