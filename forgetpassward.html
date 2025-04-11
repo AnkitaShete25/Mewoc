@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1B2430;
+            font-family: 'Inter', sans-serif;
+        }
+        .background {
+            position: absolute;
+            width: 1745px;
+            height: 1270px;
+            left: -83px;
+            top: -86px;
+        }
+        .oval {
+            position: absolute;
+            background: rgba(241, 98, 63, 0.3);
+            filter: blur(53px);
+        }
+        .oval1 { width: 529px; height: 529px; left: 369px; top: -86px; }
+        .oval2 { width: 514px; height: 514px; left: 1148px; top: 670px; background: rgba(75, 64, 215, 0.3); }
+        .oval3 { width: 338px; height: 338px; left: -83px; top: 722px; background: rgba(75, 64, 215, 0.3); }
+        .container {
+            position: absolute;
+            width: 773px;
+            height: 975px;
+            left: 24px;
+            top: 24px;
+            background: #D9D9D9;
+            border-radius: 23px;
+        }
+        .forgot-password {
+            position: absolute;
+            width: 483px;
+            height: 73px;
+            left: 909px;
+            top: 110px;
+            font-size: 60px;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        .links {
+            position: absolute;
+            left: 909px;
+            font-size: 25px;
+            color: #FFFFFF;
+        }
+        .signin-link { top: 201px; }
+        .signup-link { top: 242px; }
+        .input-box {
+            position: absolute;
+            width: 612px;
+            height: 71px;
+            left: 909px;
+            top: 313px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(60px);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 22px;
+        }
+        .checkbox {
+            position: absolute;
+            left: 909px;
+            top: 426px;
+            display: flex;
+            align-items: center;
+        }
+        .checkbox input {
+            width: 25px;
+            height: 25px;
+            background: #FFFFFF;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+        .button {
+            position: absolute;
+            width: 612px;
+            height: 68px;
+            left: 909px;
+            top: 558px;
+            background: #2D6FB7;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 25px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="oval oval1"></div>
+    <div class="oval oval2"></div>
+    <div class="oval oval3"></div>
+    <div class="container"></div>
+    <div class="forgot-password">Forgot Password</div>
+    <div class="links signin-link">Already have an account? Sign in</div>
+    <div class="links signup-link">Don’t have an account? Sign up</div>
+    <div class="input-box">Email ID</div>
+    <div class="checkbox">
+        <input type="checkbox">
+        <span>I agree to the Terms & Conditions</span>
+    </div>
+    <div class="button">Submit</div>
+</body>
+</html>
