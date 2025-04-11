@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Upload</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-gray-800 p-5">
+            <h2 class="text-xl font-bold">Mewoc Technologies</h2>
+            <ul class="mt-5">
+                <li class="py-2 px-4 bg-gray-700 rounded-lg my-2">My Profile</li>
+                <li class="py-2 px-4 bg-gray-700 rounded-lg my-2">KYC</li>
+                <li class="py-2 px-4 my-2">Change Password</li>
+                <li class="py-2 px-4 my-2">Set/Change Pin</li>
+                <li class="py-2 px-4 my-2">Back Details</li>
+            </ul>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="flex-1 p-10">
+            <h2 class="text-2xl font-semibold">Uploaded KYC (Documents)</h2>
+            <div class="mt-5 bg-gray-800 p-5 rounded-lg">
+                <div class="mb-4">
+                    <label class="block text-gray-300">Identity Proof</label>
+                    <input type="file" class="w-full p-2 mt-2 bg-gray-700 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-300">Residency Proof</label>
+                    <input type="file" class="w-full p-2 mt-2 bg-gray-700 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-300">Profile Image</label>
+                    <input type="file" class="w-full p-2 mt-2 bg-gray-700 rounded-lg">
+                </div>
+                <button class="w-full bg-blue-600 p-3 rounded-lg text-white font-bold">Submit</button>
+            </div>
+            <p class="mt-5 text-gray-400 text-sm">Uploaded Only JPG, JPEG, PNG, PDF, OR GIF. Maximum Size 5MB. Rejected attachments need to be re-uploaded for verification.</p>
+        </div>
+    </div>
+</body>
+</html>
