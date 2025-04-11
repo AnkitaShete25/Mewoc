@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Crypto Wallet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <style>
+        background-image: url();
+    </style>
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 p-5 flex flex-col">
+            <div class="text-xl font-bold text-blue-400 mb-6">Mewoc Technologies</div>
+            <nav class="flex-1">
+                <ul>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">Dashboard</a></li>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">My Profile</a></li>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">KYC</a></li>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">Set/Change Pin</a></li>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">Bank Details</a></li>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded bg-blue-500">Payment Address</a></li>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">Funding</a></li>
+                </ul>
+            </nav>
+            <button class="bg-blue-600 text-white p-2 rounded mt-4">Explore More</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex justify-center items-center">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-96">
+                <h2 class="text-2xl font-semibold mb-4">Add Your Crypto Wallet Address</h2>
+                <form>
+                    <label class="block text-sm mb-2">Coin:</label>
+                    <select class="w-full p-2 mb-4 bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <option>Select Your Coin</option>
+                        <option>Bitcoin</option>
+                        <option>Ethereum</option>
+                        <option>USDT</option>
+                        <option>BNB</option>
+                    </select>
+
+                    <label class="block text-sm mb-2">Enter Wallet Address:</label>
+                    <input type="text" placeholder="Enter Wallet Address" class="w-full p-2 mb-4 bg-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+                    <button type="submit" class="w-full bg-blue-500 p-2 rounded text-white font-semibold hover:bg-blue-600">Submit</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
