@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open New Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 p-5 flex flex-col">
+            <div class="text-xl font-bold text-blue-400 mb-6">Mewoc Technologies</div>
+            <nav class="flex-1">
+                <ul>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">Dashboard</a></li>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">My Profile</a></li>
+                    <li class="mb-2"><a href="#" class="block p-2 rounded bg-blue-500">Trading</a></li>
+                    <li class="ml-4 mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">Open New Account</a></li>
+                    <li class="ml-4 mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">My MT5 Account</a></li>
+                    <li class="ml-4 mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">Change Leverage</a></li>
+                    <li class="ml-4 mb-2"><a href="#" class="block p-2 rounded hover:bg-gray-700">Change Trading Password</a></li>
+                </ul>
+            </nav>
+            <button class="bg-blue-600 text-white p-2 rounded mt-4">Explore More</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex justify-center items-center">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-96">
+                <h2 class="text-2xl font-semibold mb-4">Standard</h2>
+                <form>
+                    <label class="block text-sm mb-2">Leverage:</label>
+                    <div class="relative mb-4">
+                        <input type="file" class="hidden" id="leverage-upload">
+                        <label for="leverage-upload" class="w-full p-2 bg-gray-700 rounded cursor-pointer flex justify-between items-center">
+                            <span id="leverage-text">No File Chosen</span>
+                            🔼
+                        </label>
+                    </div>
+
+                    <label class="block text-sm mb-2">Account Type:</label>
+                    <div class="relative mb-4">
+                        <input type="file" class="hidden" id="account-upload">
+                        <label for="account-upload" class="w-full p-2 bg-gray-700 rounded cursor-pointer flex justify-between items-center">
+                            <span id="account-text">No File Chosen</span>
+                            🔼
+                        </label>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-500 p-2 rounded text-white font-semibold hover:bg-blue-600">Create New Account</button>
+                </form>
+                <div class="mt-4 text-gray-400 text-sm">
+                    <p>1. Minimum Deposit: $0</p>
+                    <p>2. Platform: MT5</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // JavaScript to update file name display
+        document.getElementById('leverage-upload').addEventListener('change', function() {
+            document.getElementById('leverage-text').textContent = this.files[0] ? this.files[0].name : "No File Chosen";
+        });
+
+        document.getElementById('account-upload').addEventListener('change', function() {
+            document.getElementById('account-text').textContent = this.files[0] ? this.files[0].name : "No File Chosen";
+        });
+    </script>
+</body>
+</html>
