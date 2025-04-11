@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Funds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        display: flex;
+        background-image: url(Bg.png);
+        color: white;
+    }
+    
+    .sidebar {
+        width: 250px;
+        background: #1e293b;
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .logo span {
+        color: #3b82f6;
+    }
+    
+    .user {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .user img {
+        width: 50px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    
+    .user p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .user a {
+        color: #3b82f6;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    nav ul {
+        list-style: none;
+    }
+    
+    nav ul li {
+        padding: 10px 0;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .active a {
+        color: #3b82f6;
+        font-weight: bold;
+    }
+    
+    .sub-menu {
+        margin-left: 15px;
+    }
+    
+    .explore button {
+        background: #3b82f6;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    .main-content {
+        flex: 1;
+        padding: 30px;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    header h2 {
+        font-size: 20px;
+    }
+    
+    header span {
+        font-weight: bold;
+    }
+    
+    .deposit-options {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+    }
+    
+    .card h3 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .card img {
+        width: 100%;
+        max-height: 100px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+    
+    .card button {
+        background: #3b82f6;
+        border: none;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+</style>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Mewoc <span>Technologies</span></h2>
+        </div>
+        <div class="user">
+            <img src="IMG_5161 1.png" alt="User">
+            <p>Envato Authors</p>
+            <a href="#">Workspace Settings</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Trading</a></li>
+                <li><a href="#">Web Trade</a></li>
+                <li class="active"><a href="#">Funding</a></li>
+                <ul class="sub-menu">
+                    <li><a href="#">Deposit Fund</a></li>
+                    <li><a href="#">Deposit History</a></li>
+                    <li><a href="#">Withdraw Funds</a></li>
+                    <li><a href="#">Withdrawal History</a></li>
+                    <li><a href="#">Internal Transfer</a></li>
+                    <li><a href="#">Internal Transfer History</a></li>
+                </ul>
+                <li><a href="#">IB Management</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Trading Platform</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+            </ul>
+        </nav>
+        <div class="explore">
+            <button>EXPLORE MORE</button>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h2>Deposit Fund</h2>
+            <p>Hello, <span>Sandy Syahbana</span></p>
+        </header>
+        
+        <div class="deposit-options">
+            <div class="card">
+                <h3>Deposit With Wire Transfer</h3>
+                <img src="Group 115.png" alt="Wire Transfer">
+                <button>Deposit Now</button>
+            </div>
+            <div class="card">
+                <h3>Deposit With Wire Transfer</h3>
+                <img src="Group 116.png" alt="CryptoPay">
+                <button>Deposit Now</button>
+            </div>
+            <div class="card">
+                <h3>Deposit With Wire Transfer</h3>
+                <img src="Group 117.png" alt="Stripe">
+                <button>Deposit Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
